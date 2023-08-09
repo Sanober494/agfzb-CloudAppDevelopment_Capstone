@@ -20,7 +20,8 @@ logger = logging.getLogger(__name__)
 # Create an `about` view to render a static about page
 # def about(request):
 # ...
-
+def index(request):
+    return render(request, 'dealership/index.html')
 
 # Create a `contact` view to return a static contact page
 #def contact(request):
